@@ -1,0 +1,124 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CarosalRecyclerView" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="Theme.CarosalRecyclerView" parent="Base.Theme.CarosalRecyclerView" />
+
+    <style name="heavyLargeText">
+
+        <item name="android:textSize">@dimen/_28sdp</item>
+        <item name="android:fontFamily">@font/archivo_bold</item>
+        <item name="android:textColor">@color/fontBlackColor</item>
+
+    </style>
+
+    <style name="extraLargeText">
+
+        <item name="android:textSize">@dimen/_22sdp</item>
+        <item name="android:fontFamily">@font/archivo_bold</item>
+        <item name="android:textColor">@color/fontBlackColor</item>
+
+    </style>
+
+    <style name="largeTextBold">
+
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:fontFamily">@font/archivo_bold</item>
+        <item name="android:textColor">@color/fontBlackColor</item>
+
+    </style>
+
+    <style name="largeTextMedium">
+
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:fontFamily">@font/archivo_medium</item>
+        <item name="android:textColor">@color/fontBlackColor</item>
+
+    </style>
+
+    <style name="largeRegular">
+
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:fontFamily">@font/archivo_regular</item>
+        <item name="android:textColor">@color/fontBlackColor</item>
+
+    </style>
+
+
+    <style name="toolbarTextMedium">
+
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:fontFamily">@font/archivo_medium</item>
+        <item name="android:textColor">@color/fontBlackColor</item>
+
+    </style>
+
+    <style name="toolbarTextRegular">
+
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:fontFamily">@font/archivo_regular</item>
+        <item name="android:textColor">@color/fontBlackColor</item>
+
+    </style>
+
+    <style name="toolbarTextBold">
+
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:fontFamily">@font/archivo_bold</item>
+        <item name="android:textColor">@color/fontBlackColor</item>
+
+    </style>
+
+    <style name="normalTextRegular">
+
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:fontFamily">@font/archivo_regular</item>
+        <item name="android:textColor">@color/fontBlackColor</item>
+
+    </style>
+
+    <style name="normalTextMedium">
+
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:fontFamily">@font/archivo_medium</item>
+        <item name="android:textColor">@color/fontBlackColor</item>
+
+    </style>
+
+    <style name="normalTextBold">
+
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:fontFamily">@font/archivo_bold</item>
+        <item name="android:textColor">@color/fontBlackColor</item>
+
+    </style>
+
+
+    <style name="smallTextMedium">
+
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/archivo_medium</item>
+        <item name="android:textColor">@color/fontBlackColor</item>
+
+    </style>
+
+
+    <style name="smallTextBold">
+
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/archivo_bold</item>
+        <item name="android:textColor">@color/fontBlackColor</item>
+
+    </style>
+
+    <style name="smallTextRegular">
+
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/archivo_regular</item>
+        <item name="android:textColor">@color/fontBlackColor</item>
+
+    </style>
+
+</resources>

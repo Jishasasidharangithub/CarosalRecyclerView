@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/intro_background"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".2" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/ellipse_welcome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".4" />
+
+    <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
+        android:id="@+id/rvImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_intro_image" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cslWelcomeBack"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvImage">
+
+
+        <TextView
+            android:id="@+id/tvWelcomeBack"
+            style="@style/extraLargeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="@string/welcome_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLoginRegister"
+            style="@style/normalTextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:text="@string/login_register_to_order"
+            android:textColor="#9D9B9E"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvWelcomeBack" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btLoginRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/btn_background"
+            android:paddingHorizontal="@dimen/_30sdp"
+            android:text="@string/login_register"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLoginRegister" />
+
+        <TextView
+            android:id="@+id/tvSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/skip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btLoginRegister" />
+
+        <ImageView
+            android:id="@+id/ivRestaurantLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/restaurant"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSkip" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cslLogin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvImage">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glV4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.97" />
+
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@+id/glV3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow" />
+
+        <TextView
+            android:id="@+id/tvLogInOrRegister"
+            style="@style/toolbarTextBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_or_register"
+            app:layout_constraintEnd_toEndOf="@+id/glV4"
+            app:layout_constraintStart_toStartOf="@+id/ivArrow"
+            app:layout_constraintTop_toTopOf="@+id/ivArrow" />
+
+        <TextView
+            android:id="@+id/tvEnterMobileNumber"
+            style="@style/extraLargeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            android:text="@string/enter_mobile_number"
+            app:layout_constraintEnd_toEndOf="@+id/glV4"
+            app:layout_constraintStart_toStartOf="@+id/glV3"
+            app:layout_constraintTop_toBottomOf="@+id/tvLogInOrRegister" />
+
+        <TextView
+            android:id="@+id/tvPleaseEnterYourMobileNumberAndProceed"
+            style="@style/normalTextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            android:text="@string/please_enter_your_mobile_number_and_proceed"
+            android:textColor="#9D9B9E"
+            app:layout_constraintEnd_toEndOf="@+id/glV4"
+            app:layout_constraintStart_toStartOf="@+id/glV3"
+            app:layout_constraintTop_toBottomOf="@+id/tvEnterMobileNumber" />
+
+        <TextView
+            android:id="@+id/tvMobileNumber"
+            style="@style/normalTextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center"
+            android:text="@string/mobile_number"
+            android:textColor="#9D9B9E"
+            app:layout_constraintStart_toStartOf="@+id/glV3"
+            app:layout_constraintTop_toBottomOf="@+id/tvPleaseEnterYourMobileNumberAndProceed" />
+
+        <EditText
+            android:id="@+id/etMobileNumber"
+            style="@style/largeTextMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="+91 000 00 00 00"
+            android:padding="@dimen/_5sdp"
+            app:layout_constraintEnd_toStartOf="@+id/glV4"
+            app:layout_constraintStart_toStartOf="@+id/glV3"
+            app:layout_constraintTop_toBottomOf="@+id/tvMobileNumber" />
+
+        <ImageView
+            android:id="@+id/ivCross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/etMobileNumber"
+            app:layout_constraintEnd_toEndOf="@+id/etMobileNumber"
+            app:layout_constraintTop_toTopOf="@+id/etMobileNumber"
+            app:srcCompat="@drawable/ic_cross" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#9D9B9E"
+            app:layout_constraintEnd_toEndOf="@id/glV4"
+            app:layout_constraintStart_toStartOf="@+id/glV3"
+            app:layout_constraintTop_toBottomOf="@+id/etMobileNumber" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/btn_background"
+            android:paddingHorizontal="@dimen/_35sdp"
+            android:text="@string/next"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/glV4"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cslVerifyOtp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvImage">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".09" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glv6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".97" />
+
+        <ImageView
+            android:id="@+id/ivArrowVerifyOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/glv5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow" />
+
+        <TextView
+            android:id="@+id/tvVerify"
+            style="@style/largeTextBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Verify"
+            app:layout_constraintEnd_toEndOf="@id/glv6"
+            app:layout_constraintStart_toEndOf="@+id/ivArrowVerifyOtp"
+            app:layout_constraintTop_toTopOf="@+id/ivArrowVerifyOtp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/extraLargeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Verify your \nPhone Number"
+            app:layout_constraintEnd_toEndOf="@id/glv6"
+            app:layout_constraintStart_toStartOf="@+id/glv5"
+            app:layout_constraintTop_toBottomOf="@+id/tvVerify" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            style="@style/normalTextMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_3sdp"
+            android:text="Enter the 4-digit code sent to\n+91 00000000 by SMS."
+            android:textColor="#9D9B9E"
+            app:layout_constraintEnd_toEndOf="@id/glv6"
+            app:layout_constraintStart_toStartOf="@+id/glv5"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <TextView
+            android:id="@+id/tvOtp"
+            style="@style/normalTextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="OTP"
+            android:textColor="#9D9B9E"
+            app:layout_constraintStart_toStartOf="@+id/glv5"
+            app:layout_constraintTop_toBottomOf="@+id/tvContent" />
+
+        <EditText
+            android:id="@+id/etOtp"
+            style="@style/largeTextMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/transparent"
+            android:hint="8432"
+            app:layout_constraintEnd_toEndOf="@id/glv6"
+            app:layout_constraintStart_toStartOf="@+id/glv5"
+            app:layout_constraintTop_toBottomOf="@+id/tvOtp" />
+
+        <ImageView
+            android:id="@+id/ivCrossVerifyOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/etOtp"
+            app:layout_constraintEnd_toEndOf="@+id/etOtp"
+            app:layout_constraintTop_toTopOf="@+id/etOtp"
+            app:srcCompat="@drawable/ic_cross" />
+
+        <View
+            android:id="@+id/viewVerifyOtp"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#9D9B9E"
+            app:layout_constraintEnd_toEndOf="@id/glv6"
+            app:layout_constraintStart_toStartOf="@+id/glv5"
+            app:layout_constraintTop_toBottomOf="@+id/etOtp" />
+
+        <TextView
+            android:id="@+id/tvCodeText"
+            style="@style/normalTextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get new code in "
+            android:textColor="#9D9B9E"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSubmit"
+            app:layout_constraintStart_toStartOf="@+id/glv5"
+            app:layout_constraintTop_toTopOf="@+id/btnSubmit" />
+
+        <TextView
+            android:id="@+id/tvCode"
+            style="@style/normalTextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:text="22:33"
+            android:textColor="#1F1F29"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSubmit"
+            app:layout_constraintStart_toEndOf="@+id/tvCodeText"
+            app:layout_constraintTop_toTopOf="@+id/btnSubmit" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@drawable/btn_background"
+            android:paddingHorizontal="@dimen/_30sdp"
+            android:text="Submit"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/glv6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
