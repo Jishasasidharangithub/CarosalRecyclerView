@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/introFragment">
+    app:startDestination="@id/cartFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -14,4 +14,19 @@
         android:id="@+id/introFragment"
         android:name="com.restaurant.calicutparagon.ae.ui.fragment.onbody.IntroFragment"
         android:label="IntroFragment" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.restaurant.calicutparagon.ae.ui.fragment.CartFragment"
+        android:label="CartFragment" />
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.restaurant.calicutparagon.carosalrecyclerview.ui.fragment.OrdersFragment"
+        android:label="fragment_orders"
+        tools:layout="@layout/fragment_orders" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.restaurant.calicutparagon.carosalrecyclerview.ui.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
 </navigation>
